@@ -17,3 +17,10 @@ kubectl apply -f pod.yaml
 kubectl apply -f nodeport.yaml
 
 kubectl get all
+
+
+curl $(minikube service node-port --url)/
+
+or
+
+http://192.168.58.2:32020/
